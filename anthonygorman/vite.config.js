@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     outDir: 'build'
   },
-  base: '/anthonygorman/'
+  base: '/personal-website/'
 })
 
 
