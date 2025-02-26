@@ -27,6 +27,9 @@ function Body() {
           but now that I've written over 100 poems, my goal is to self-publish them. Stay tuned, I plan
           on getting a hold of an editor soon!
         </p>
+        <p className={styles.text}>
+          I am also a Christian! Back home, I attend Cornerstone Church of Joliet.
+        </p>
         <h2 className={styles.h2}>
           [hobbies]
         </h2>
