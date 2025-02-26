@@ -1,0 +1,95 @@
+@import '../variables.css';
+
+  .resumeContainer {
+    width: 100%;
+  max-width: 1000px; /* Adjust this as needed */
+  background-color: var(--background);
+  color: var(--primary-color);
+  font-family: 'Courier New', Courier, monospace;
+  text-align: left; /* Ensures content is left-aligned */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+.resumeHeader {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.resumeHeader h1 {
+  font-size: 22pt;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.resumeHeader a {
+  color: var(--link-color);
+  margin: 0 10px;
+}
+
+.resumeHeader a:hover {
+  color: var(--link-hover);
+}
+
+.resumeSection {
+  margin-bottom: 1.5rem;
+}
+
+.resumeSection h2 {
+  font-size: 18pt;
+  font-weight: bold;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.resumeEntry {
+  margin-bottom: 1rem;
+}
+
+.resumeEntry h3 {
+  font-size: 14pt;
+  font-weight: bold;
+  margin: 0;
+}
+
+.resumeEntry p {
+  font-size: 12pt;
+  margin: 5px 0;
+}
+
+.resumeList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resumeList li {
+  padding-left: 1rem;
+  text-indent: -1rem;
+}
+
+.resumeList li::before {
+  content: "▶ ";
+  color: var(--primary-hover);
+}
+
+@media (max-width: 768px) {
+  .resumeContainer {
+    padding: 1rem;
+  }
+
+  .resumeHeader h1 {
+    font-size: 18pt;
+  }
+
+  .resumeSection h2 {
+    font-size: 16pt;
+  }
+
+  .resumeEntry h3 {
+    font-size: 12pt;
+  }
+
+  .resumeEntry p {
+    font-size: 10pt;
+  }
+}
