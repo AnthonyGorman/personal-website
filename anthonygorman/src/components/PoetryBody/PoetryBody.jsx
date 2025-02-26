@@ -7,7 +7,7 @@ function PoetryBody() {
     <div className={styles.body}>
       <h1 className={styles.h1}>My Poetry</h1>
       <p className={styles.text}>
-        Soon I'll be self-publishing a book of my poetry.
+        Soon, I'll be self-publishing a book of my poetry.
         Here are a few of my poems to get you started (Copyright © 2025 Anthony Gorman).
       </p>
       <Poem title="Concrete"

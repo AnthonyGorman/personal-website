@@ -25,7 +25,7 @@ function Body() {
         <p className={styles.text}>
           I began writing poetry when I was a sophomore in college. None of my work is published yet,
           but now that I've written over 100 poems, my goal is to self-publish them. Stay tuned, I plan
-          on getting a hold of an editor soon!
+          on getting a hold of an editor soon.
         </p>
         <p className={styles.text}>
           I am also a Christian! Back home, I attend Cornerstone Church of Joliet.
