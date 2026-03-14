@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createHashRouter } from 'react-router-dom'
 import App, { HomePage } from './App'
 import type { Theme } from './App'
 import { useOutletContext } from 'react-router-dom'
@@ -12,7 +12,7 @@ function HomeWrapper() {
   return <HomePage theme={theme} setTheme={setTheme} />
 }
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     element: <App />,
     children: [
@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       { path: '/research/:slug', element: <ResearchPaperPage /> },
     ],
   },
-], { basename: import.meta.env.BASE_URL.replace(/\/$/, '') })
+])
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

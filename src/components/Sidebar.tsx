@@ -3,10 +3,10 @@ import { NAME } from '../App'
 import type { Theme } from '../App'
 
 const NAV_ITEMS = [
-  { label: 'about',    href: '#about' },
-  { label: 'blog',     href: '#blog' },
-  { label: 'research', href: '#research' },
-  { label: 'projects', href: '#projects' },
+  { label: 'about' },
+  { label: 'blog' },
+  { label: 'research' },
+  { label: 'projects' },
 ]
 
 const THEMES: { key: Theme; className: string; label: string }[] = [
@@ -53,12 +53,16 @@ export default function Sidebar({ theme, onThemeChange }: Props) {
 
       <nav>
         <ul className="sidebar__nav">
-          {NAV_ITEMS.map(({ label, href }) => (
+          {NAV_ITEMS.map(({ label }) => (
             <li key={label}>
               <a
-                href={href}
+                href={`#${label}`}
                 className={activeSection === label ? 'active' : ''}
-                onClick={() => setActiveSection(label)}
+                onClick={(e) => {
+                  e.preventDefault()
+                  setActiveSection(label)
+                  document.getElementById(label)?.scrollIntoView({ behavior: 'smooth' })
+                }}
               >
                 {label}
               </a>
