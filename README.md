@@ -1,4 +1,3 @@
-# anthonygorman.com
 
 Personal website built with Vite, React, and TypeScript.
 
