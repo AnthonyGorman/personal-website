@@ -47,7 +47,7 @@ export default function Sidebar({ theme, onThemeChange }: Props) {
   }, [])
   return (
     <aside className="sidebar">
-      <img src="/Anthony.png" alt={NAME} className="sidebar__photo" />
+      <img src={import.meta.env.BASE_URL + 'Anthony.png'} alt={NAME} className="sidebar__photo" />
 
       <span className="sidebar__name">{NAME}</span>
 
